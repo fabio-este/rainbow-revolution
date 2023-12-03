@@ -1,0 +1,45 @@
+//
+// Variables
+//
+
+.navbar-mainnavigation {
+  --mainnavigation-nav-height: 90px;
+}
+
+@media (min-width: 576px) {
+  .navbar-mainnavigation {
+    --mainnavigation-nav-height: 90px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-mainnavigation {
+    --mainnavigation-nav-height: 90px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-mainnavigation {
+    --mainnavigation-nav-height: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-mainnavigation {
+    --mainnavigation-nav-height: 110px;
+  }
+}
+@media (min-width: 1400px) {
+  .navbar-mainnavigation {
+    --mainnavigation-nav-height: 110px;
+  }
+}
+
+$dark-bg: #0b0b0b;
+
+:root {
+  --bs-body-color: #e0e0e0;
+  --bs-body-bg: #0b0b0b;
+  --cardgroup-gap: 1.5rem;
+  --bs-body-font-size: 1.25rem;
+}

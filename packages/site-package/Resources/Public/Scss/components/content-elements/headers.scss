@@ -1,0 +1,24 @@
+.frame-header,
+form {
+  margin-bottom: 2rem;
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    &.element-header,
+    &.carousel-header {
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.383rem;
+      //filter: drop-shadow(0 2px 1px #1f5031) drop-shadow(0 -1px 3px #f9ee96)        drop-shadow(0 2px 1px #d48334);
+    }
+  }
+}

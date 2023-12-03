@@ -1,0 +1,81 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+identifier: joinForm_1
+label: 'Join Form'
+type: Form
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Join The Revolution'
+      recipients:
+        fabio.stegmeyer@gmail.com: 'Fabio Stegmeyer'
+      senderAddress: '{email}'
+      senderName: '{name}'
+      format: html
+      attachUploads: true
+      translation:
+        language: default
+      title: 'Confirmation of your message'
+    identifier: EmailToReceiver
+  -
+    options:
+      pageUid: '15'
+      additionalParameters: ''
+      fragment: ''
+    identifier: Redirect
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    identifier: page-1
+    label: 'Join Us'
+    type: Page
+    renderables:
+      -
+        defaultValue: ''
+        identifier: name
+        label: Name
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Name
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        identifier: email
+        label: Email
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Email address'
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: EmailAddress
+      -
+        defaultValue: ''
+        type: Telephone
+        identifier: telephone-1
+        label: Mobile
+        properties:
+          elementDescription: 'Only fill this out if you want to join our free Rainbow Revolution WhatsApp community'
+      -
+        defaultValue: ''
+        identifier: message
+        label: Message
+        type: Textarea
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: ''
+            required: required
+        validators:
+          -
+            identifier: NotEmpty

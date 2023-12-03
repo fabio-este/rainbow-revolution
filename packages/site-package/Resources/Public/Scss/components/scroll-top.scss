@@ -1,0 +1,47 @@
+.scroll-top {
+  bottom: 10px;
+
+  width: 48px;
+  height: 48px;
+  z-index: 9;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-image: radial-gradient(
+      circle at top,
+      #ad0440 0%,
+      #532671 17%,
+      #069fb4 32%,
+      #4aa421 50%,
+      #ffb802 68%,
+      #fc6c03 86%,
+      #de0c3a 100%
+    ) !important;
+    filter: blur(3px);
+    background-size: 100% 209%;
+    background-position-y: -6rem;
+    transform: rotate(180deg);
+    @include transition(all 500ms ease-in-out);
+  }
+
+  .scroll-top-icon {
+    &:before {
+      height: 33%;
+      width: 33%;
+      border-top: 3px solid;
+      border-left: 3px solid;
+    }
+  }
+
+  &.scroll-top-visible {
+    &:before {
+      background-position-y: -12rem;
+      @include transition(all 500ms ease-in-out);
+    }
+  }
+}

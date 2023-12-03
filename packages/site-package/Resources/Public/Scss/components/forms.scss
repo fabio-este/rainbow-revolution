@@ -1,0 +1,69 @@
+nav.form-navigation {
+  display: flex;
+  justify-content: end;
+}
+
+.form-control:focus,
+.form-group input[type="file"]:focus,
+.frame-type-felogin_login input[type="text"]:focus,
+.frame-type-felogin_login input[type="password"]:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #e19396;
+  outline: 0;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: radial-gradient(
+      circle at top left,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000
+    );
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 60s linear infinite;
+    border-radius: 5px;
+  }
+
+  &:after {
+    animation: steam 90s linear infinite;
+    filter: blur(10px);
+  }
+
+  padding: 1rem;
+  @media (min-width: 968px) {
+    font-size: 1.25em;
+  }
+}
+
+label.form-label {
+  text-shadow: 2px 7px 5px #1f5031;
+}
+
+.form-text {
+  color: #e0e0e0;
+}
+
+.form-control::placeholder,
+.form-control:-ms-input-placeholder,
+.form-control::-ms-input-placeholder {
+  color: #e0e0e0;
+}
+
+.form-check-input[type="checkbox"] {
+  border-radius: 0.25em;
+  margin-right: 0.25rem;
+}

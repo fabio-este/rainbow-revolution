@@ -1,0 +1,94 @@
+.frame {
+  &.frame-frame-round-images {
+    picture {
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+
+  &.frame-hovering-images {
+    figure.image {
+      box-shadow: 0 2px 2px #1f5031, 0 0 40px #f9ee96;
+    }
+  }
+  &.frame-hovering-border-radius-images {
+    figure.image {
+      border-radius: 13px;
+      box-shadow: 0 2px 2px #1f5031, 0 0 40px #f9ee96;
+      overflow: hidden;
+    }
+  }
+
+  &.frame-fullscreen {
+    aspect-ratio: 1.7777777778;
+
+    .frame-type-text {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 3rem;
+      padding: 2rem 3rem;
+    }
+
+    @media (min-width: 1200px) {
+      .frame-group-container {
+        height: 100%;
+        .frame-group-inner {
+          height: 100%;
+          .frame-container {
+            height: 100%;
+            .frame-inner {
+              height: 100%;
+              .contentcontainer {
+                height: 100%;
+                .contentcontainer-column {
+                  height: 100%;
+
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.frame-background-rainbow-animated {
+    .frame-container {
+      background: linear-gradient(0deg, #000, #272727);
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        background: radial-gradient(
+          circle at top left,
+          #fb0094,
+          #0000ff,
+          #00ff00,
+          #ffff00,
+          #ff0000,
+          #fb0094,
+          #0000ff,
+          #00ff00,
+          #ffff00,
+          #ff0000
+        );
+        background-size: 400%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        animation: steam 60s linear infinite;
+      }
+
+      &:after {
+        animation: steam 90s linear infinite;
+        filter: blur(50px);
+      }
+    }
+  }
+}

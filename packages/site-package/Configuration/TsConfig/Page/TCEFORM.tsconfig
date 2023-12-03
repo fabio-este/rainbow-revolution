@@ -1,0 +1,37 @@
+#
+# TCEFORM
+#
+TCEFORM {
+    pages {
+        layout {
+            addItems {
+          #      header-transparent = Transparenter Header
+            }
+        }
+    }
+    tt_content {
+        frame_class{
+            addItems {
+                frame-round-images = Round Pictures
+                frame-border-radius-images = Round Edge Pictures
+                frame-hovering-images = Hovering Pictures
+            }
+          
+            types{
+                container_1_columns{
+                    addItems {
+                        fullscreen = Fullscreen
+                    }
+                }
+            }
+        }
+        background_color_class{
+            addItems {
+                rainbow = Rainbow  
+                rainbow-animated = Rainbow Animated               
+                  
+            }
+        }     
+        
+    }
+}

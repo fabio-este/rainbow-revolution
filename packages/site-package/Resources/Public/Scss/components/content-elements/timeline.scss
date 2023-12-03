@@ -1,0 +1,124 @@
+.frame-type-timeline {
+  .timeline {
+    &:before {
+      opacity: 0.75rem;
+      /* opacity: 0.25; */
+      background-image: radial-gradient(
+        circle,
+        #ad0440 0%,
+        #532671 16%,
+        #069fb4 32%,
+        #4aa421 50%,
+        #ffb802 68%,
+        #fc6c03 83%,
+        #de0c3a 100%
+      ) !important;
+      width: 2px;
+      border: none;
+      opacity: 1;
+    }
+    .timeline-item {
+      .timeline-item-inner {
+        padding: 0;
+        .timeline-content-wrap {
+          background: linear-gradient(0deg, #000, #272727);
+          border-radius: 5px;
+          padding: 1rem;
+          font-size: 1rem;
+          @media (min-width: 1400px) {
+            font-size: 1.25em;
+            padding: 2rem;
+          }
+          /**
+          &:before,
+          &:after {
+            content: "";
+            position: absolute;
+            left: -2px;
+            top: -2px;
+            background: radial-gradient(
+              circle at top left,
+              #fb0094,
+              #0000ff,
+              #00ff00,
+              #ffff00,
+              #ff0000,
+              #fb0094,
+              #0000ff,
+              #00ff00,
+              #ffff00,
+              #ff0000
+            );
+            background-size: 400%;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            z-index: -1;
+            animation: steam 60s linear infinite;
+            border-radius: 5px;
+          }
+
+          &:after {
+            animation: steam 90s linear infinite;
+            filter: blur(10px);
+          }
+
+          padding: 1rem;
+          @media (min-width: 968px) {
+            font-size: 1.25em;
+          }*/
+        }
+
+        border-radius: 5px;
+        color: #e0e0e0;
+        text-align: center;
+        border: none;
+
+        .timeline-item-marker:after,
+        .timeline-item-marker:before,
+        .timeline-item-marker span,
+        .timeline-item-icon:after,
+        .timeline-item-icon:before,
+        .timeline-item-icon span {
+          border-radius: 50%;
+        }
+
+        .timeline-item-header {
+          .timeline-item-header-headline {
+            font-size: 1.125rem;
+
+            @media (min-width: 1400px) {
+              font-size: 1.25rem;
+            }
+            color: #e0e0e0;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            border-bottom: 1px solid #464545;
+            padding-bottom: 1rem;
+          }
+        }
+
+        .timeline-item-marker {
+          span {
+            background-image: radial-gradient(
+              circle at top right,
+              #ad0440 0%,
+              #532671 16%,
+              #069fb4 32%,
+              #4aa421 50%,
+              #ffb802 68%,
+              #fc6c03 83%,
+              #de0c3a 100%
+            ) !important;
+          }
+        }
+
+        .timeline-item-text {
+          color: #e0e0e0;
+        }
+        .timeline-item-date {
+          display: none;
+        }
+      }
+    }
+  }
+}

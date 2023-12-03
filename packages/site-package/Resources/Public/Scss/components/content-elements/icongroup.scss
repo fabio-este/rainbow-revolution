@@ -1,0 +1,83 @@
+.icongroup {
+  .icongroup-item {
+    justify-content: flex-start;
+
+    padding: 1rem;
+
+    margin: 0.5rem;
+    text-align: left;
+    font-size: 1rem;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+
+    padding: 0.5rem;
+    @include transition(all 150ms ease-in-out);
+
+    .icongroup-item-text {
+      color: #fff;
+      font-weight: normal;
+    }
+    .icongroup-item-text-header {
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+    .icongroup-item-icon {
+      background-color: #fff;
+      margin-right: 0;
+      @include transition(all 150ms ease-in-out);
+      border-radius: 50%;
+      font-size: 1rem;
+      box-shadow: 0px 4px 5px #1f5031, 0px 2px 5px #d48334,
+        0px -2px 10px #f9ee96;
+
+      background: -webkit-repeating-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0) 6%,
+          rgba(255, 255, 255, 0.1) 7.5%
+        ),
+        -webkit-repeating-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(
+                0,
+                0,
+                0,
+                0
+              )
+              4%, rgba(0, 0, 0, 0.03) 3.5%),
+        -webkit-repeating-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(
+                255,
+                255,
+                255,
+                0
+              )
+              1.2%, rgba(255, 255, 255, 0.15) 2.2%),
+        linear-gradient(
+          180deg,
+          #c7c7c7 5%,
+          #e6e6e6 65%,
+          #c7c7c7 82%,
+          #b3b3b3 100%
+        );
+      margin-bottom: 1rem;
+
+      height: 4rem;
+      width: 4rem;
+      padding: 1rem;
+      svg {
+        color: #4f5957;
+        filter: drop-shadow(0 -1px 1px #8a918a) drop-shadow(0 1px -1px #414c4b);
+      }
+    }
+
+    &:hover {
+      .icongroup-item-icon {
+        box-shadow: 0px 2px 5px #d48334, 0px 2px 40px #f9ee96;
+      }
+    }
+  }
+}
+
+.frame.frame-default.frame-type-icon_group.frame-layout-default.frame-size-default.frame-height-default.frame-background-silver.frame-space-before-none.frame-space-after-none.frame-no-backgroundimage {
+  background: radial-gradient(ellipse at 56% 13%, #8a918a 22%, #2f3a38);
+}
