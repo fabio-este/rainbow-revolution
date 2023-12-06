@@ -1,6 +1,5 @@
-public/fileadmin/
-public/typo3temp/
+public/
 var/
 vendor/
 
-packages/site-package/node_modules/
+packages/site-package/node_modules/git 
