@@ -25,8 +25,9 @@ page {
     }
 
     includeJSFooter {
-      header = EXT:site_package/Resources/Public/JavaScript/header.js
-        loading-screen = EXT:site_package/Resources/Public/JavaScript/loading-screen.js
+      loading-screen = EXT:site_package/Resources/Public/JavaScript/loading-screen.js
+      header = EXT:site_package/Resources/Public/JavaScript/header.js        
+      tileHover = EXT:site_package/Resources/Public/JavaScript/tile-hover.js
     }
 }
 

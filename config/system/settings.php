@@ -19,12 +19,12 @@ return [
     'EXTENSIONS' => [
         'backend' => [
             'backendFavicon' => '',
-            'backendLogo' => '',
+            'backendLogo' => 'EXT:site_package/Resources/Public/Images/logo.png',
             'loginBackgroundImage' => 'EXT:site_package/Resources/Public/Images/backend.jpg',
             'loginFootnote' => 'Rainbow Revolution © 2023',
-            'loginHighlightColor' => '#1c0a33',
-            'loginLogo' => 'EXT:site_package/Resources/Public/Images/logo.png',
-            'loginLogoAlt' => '',
+            'loginHighlightColor' => '#0b0b0b',
+            'loginLogo' => 'EXT:site_package/Resources/Public/Images/logo-claim.png',
+            'loginLogoAlt' => 'Rainbow Revolution Logo',
         ],
         'bootstrap_package' => [
             'disableCssProcessing' => '0',
@@ -120,7 +120,7 @@ return [
         ],
         'sitename' => 'rainbow-revolution.com',
         'systemMaintainers' => [
-            1
+            1,
         ],
     ],
 ];

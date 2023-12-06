@@ -1,5 +1,10 @@
 .card-group-element {
   .card {
+    &:hover {
+      box-shadow: 0 0 60px rgb(224, 224, 224, 0.3);
+      cursor: pointer;
+    }
+    @include transition(transform 0.1s, box-shadow 0.1s);
     background-color: #000;
     &::after {
       content: " ";
@@ -10,6 +15,7 @@
       border-radius: 5px;
       left: 1px;
       top: 1px;
+      border: 1px solid #000;
     }
     &::before {
       content: " ";
@@ -51,6 +57,10 @@
         text-transform: uppercase;
         font-weight: 400;
         font-size: 1.5rem;
+      }
+      .card-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
       }
     }
 

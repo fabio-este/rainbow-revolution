@@ -11,3 +11,6 @@ function adjustBodyTopPadding(e) {
   console.log(paddingTop);
   contentWrap.style.paddingTop = paddingTop + "px";
 }
+
+
+

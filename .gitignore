@@ -1,0 +1,6 @@
+public/fileadmin/
+public/typo3temp/
+var/
+vendor/
+
+packages/site-package/node_modules/
