@@ -30,15 +30,32 @@ else
     ln -s packages/site-package/Resources/Private _templates
 fi
 
-# Add bootstrap-package symlink
-if [[ -L packages/bootstrap-package ]]; 
+# Add config symlink
+if [[ -L _config ]]; 
 then
-  echo "bootstrap-package symlink already exists"
+  echo "_config symlink already exists"
 else
-    cd packages
-    ln -s ../vendor/bk2k/bootstrap-package/ bootstrap-package
-    cd ..
+    ln -s packages/site-package/Configuration/ _config
 fi
+
+# Add classes symlink
+if [[ -L _classes ]]; 
+then
+  echo "_classes symlink already exists"
+else
+    ln -s packages/site-package/Classes/ _classes
+fi
+
+
+# Add bootstrap-package symlink
+#if [[ -L packages/bootstrap-package ]]; 
+#then
+#    echo "bootstrap-package symlink already exists"
+#else
+#    cd packages
+#    ln -s ../vendor/bk2k/bootstrap-package/ bootstrap-package
+#    cd ..
+#fi
 
 #################################
 ### YARN installation & build ###
