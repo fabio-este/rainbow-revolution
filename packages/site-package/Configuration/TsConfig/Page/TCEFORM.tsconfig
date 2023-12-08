@@ -1,6 +1,3 @@
-#
-# TCEFORM
-#
 TCEFORM {
     pages {
         layout {
@@ -32,6 +29,9 @@ TCEFORM {
                   
             }
         }     
+        pi_flexform{
+            
+        }
         
     }
 }
