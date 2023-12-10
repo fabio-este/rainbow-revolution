@@ -15,7 +15,7 @@ date_default_timezone_set('Europe/Berlin');
  */
 
 // Project name
-set('application', 'lotus-ion.com');
+set('application', 'rainbow-revolution.com');
 
 // Import hosts
 import('servers.yaml');
@@ -23,7 +23,7 @@ import('servers.yaml');
 // Public dir
 set('typo3_public', 'public');
 
-set('repository', 'https://github.com/fabio-este/lotus-ion.git');
+set('repository', 'https://github.com/fabio-este/rainbow-revolution.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true);
