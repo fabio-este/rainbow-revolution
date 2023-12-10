@@ -1,25 +1,41 @@
 hosts:
+  #www.rainbow-revolution.com:
+  #  remote_user: u107655576
+  #  port: 22
+  #  pty: true
+  #  forward_agent: true
+  #  deploy_path: "/rainbow-revolution.com"
+  #  branch: master
+  #  hostname: "access903446306.webspace-data.io"
+  #  bin:
+  #    php: /usr/bin/php8.2-cli
+  #    composer: /usr/bin/php8.2-cli composer.phar
+
   .server_mittwald: &base_mittwald
-    user: fabio.stegmeyer@gmail.com@a-hng2gu
-    remote_user: fabio.stegmeyer@gmail.com@a-hng2gu
-    http_user: fabio.stegmeyer@gmail.com@a-hng2gu
+    user: ssh-uwhk61@a-fgy51f
+    remote_user: ssh-uwhk61@a-fgy51f
+    http_user: ssh-uwhk61@a-fgy51f
     port: 22
-    forward_agent: true
     pty: true
+    forward_agent: true
+    multiplexing: true
+    #configFile: ~/.ssh/config
+    #identityFile: ~/.ssh/mittwald
     bin:
       php: /usr/local/bin/php_cli
       composer: /usr/local/bin/composer
 
-  preview.rainbow-revolution.com:
-    <<: *base_mittwald
-    stage: preview
-    branch: master
-    deploy_path: ~/html/preview.rainbow-revolution.com
-    hostname: "p655552.webspaceconfig.de"
-
   www.rainbow-revolution.com:
     <<: *base_mittwald
-    stage: production
+    remote_user: ssh-uwhk61@a-fgy51f
+    stage: preview
     branch: master
-    deploy_path: ~/html/www.rainbow-revolution.com
-    hostname: "www.rainbow-revolution.com"
+    forward_agent: true
+    configFile: ~/.ssh/config
+    identityFile: ~/.ssh/mittwald
+    #  forward_agent: true
+    # port: 22
+    # pty: true
+    #  multiplexing: true
+    deploy_path: "~/html/rainbow-revolution-e4j6j"
+    hostname: "ssh.fiestel.project.host"
