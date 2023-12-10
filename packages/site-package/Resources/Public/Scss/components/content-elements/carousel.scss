@@ -1,0 +1,15 @@
+.carousel {
+  .carousel-content {
+    .carousel-header,
+    .carousel-subheader {
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      text-transform: uppercase;
+    }
+    .carousel-header {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .carousel-subheader {
+    }
+  }
+}
