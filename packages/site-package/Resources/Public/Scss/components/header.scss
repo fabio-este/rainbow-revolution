@@ -344,7 +344,7 @@ button.navbar-toggler {
   }
   .navbar-toggler-icon:before {
     @include transition(all 500ms ease-in-out);
-    transform: rotate(-225deg);
+    transform: rotate(-135deg);
     background-image: radial-gradient(
       circle at center,
       #ad0440 0%,
@@ -358,7 +358,7 @@ button.navbar-toggler {
   }
   .navbar-toggler-icon:after {
     @include transition(all 500ms ease-in-out);
-    transform: rotate(225deg);
+    transform: rotate(135deg);
 
     background-image: radial-gradient(
       circle at center,
@@ -372,11 +372,22 @@ button.navbar-toggler {
     ) !important;
   }
   &.collapsed {
+    .navbar-toggler-icon {
+      background-image: radial-gradient(
+        #ad0440 0%,
+        #532671 16%,
+        #069fb4 32%,
+        #4aa421 50%,
+        #ffb802 68%,
+        #fc6c03 83%,
+        #de0c3a 100%
+      ) !important;
+    }
     .navbar-toggler-icon:before {
       top: -0.675rem;
       @include transition(all 500ms ease-in-out);
       background-image: radial-gradient(
-        at top left,
+        at right,
         #ad0440 0%,
         #532671 16%,
         #069fb4 32%,
@@ -390,7 +401,7 @@ button.navbar-toggler {
       top: 0.675rem;
       @include transition(all 500ms ease-in-out);
       background-image: radial-gradient(
-        at bottom left,
+        at left,
         #ad0440 0%,
         #532671 16%,
         #069fb4 32%,
