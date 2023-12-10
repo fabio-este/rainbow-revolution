@@ -15,7 +15,7 @@ button.navbar-toggler:focus:not(:focus-visible) {
   box-shadow: none;
 }
 header#page-header {
-  background-color: #0b0b0b !important;
+  background-color: #000 !important;
 
   @media (max-width: 968px) {
     overflow-y: auto;
