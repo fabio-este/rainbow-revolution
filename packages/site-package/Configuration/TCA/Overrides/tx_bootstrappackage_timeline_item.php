@@ -24,11 +24,4 @@ call_user_func(function () {
         '',
         'after:header'
     );
-
-    // Add flexForms for content element configuration
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
-        '*',
-        'FILE:EXT:site_package/Configuration/FlexForms/Timeline.xml',
-        'timeline'
-    );
 });
