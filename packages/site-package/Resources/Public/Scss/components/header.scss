@@ -216,7 +216,7 @@ header#page-header {
 
     &.navbar-transition {
       --bs-bg-opacity: 1;
-      @include box-shadow(0 0 10px 5px #0b0b0b);
+      @include box-shadow(0 0 10px 5px #000);
 
       &:after {
         content: " ";
