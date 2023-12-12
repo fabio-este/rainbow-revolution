@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7da7718ad6a8d0869578643f0811bbd",
+    "content-hash": "687d36f1662f0ba0e1baf0c9f024126e",
     "packages": [
         {
             "name": "b13/container",
@@ -1026,10 +1026,10 @@
             "dist": {
                 "type": "path",
                 "url": "packages/site-package",
-                "reference": "8b4ce7083d32059d1e3c60a9ed99b0df803f0779"
+                "reference": "a37653f8f8485349f0e17d58553fe9f5a780a3d2"
             },
             "require": {
-                "bk2k/bootstrap-package": "^13.0 || ^14.0"
+                "bk2k/bootstrap-package": "^14.0"
             },
             "type": "typo3-cms-extension",
             "extra": {
@@ -1039,7 +1039,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "FabioEste\\Sitepackage\\": "Classes/"
+                    "FabioEste\\SitePackage\\": "Classes/"
                 }
             },
             "license": [
@@ -5609,6 +5609,58 @@
                 }
             ],
             "time": "2023-11-06T11:00:25+00:00"
+        },
+        {
+            "name": "t3brightside/favicon",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/t3brightside/favicon.git",
+                "reference": "610a8e46533afe1d6c69b570057f026dcade38db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/t3brightside/favicon/zipball/610a8e46533afe1d6c69b570057f026dcade38db",
+                "reference": "610a8e46533afe1d6c69b570057f026dcade38db",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^10.4 || ^11.5 || ^12.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "favicon"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Tanel Põld",
+                    "homepage": "https://t3brightside.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 CMS extension to add SVG and PNG favicons",
+            "homepage": "https://github.com/t3brightside/favicon/",
+            "keywords": [
+                "favicon",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/t3brightside/favicon/issues",
+                "source": "https://github.com/t3brightside/favicon/tree/1.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/t3brightside",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-10-19T19:58:46+00:00"
         },
         {
             "name": "typo3/class-alias-loader",

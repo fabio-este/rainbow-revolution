@@ -30,6 +30,7 @@
 		"bk2k/bootstrap-package": "^14.0",
 		"fabio-este/site-package": "@dev",
 		"ssch/typo3-encore": "^5.0",
+		"t3brightside/favicon": "^1.1",
 		"typo3/cms-backend": "^12.4.0",
 		"typo3/cms-belog": "^12.4.0",
 		"typo3/cms-beuser": "^12.4.0",
