@@ -8,6 +8,9 @@
 #### PAGE ####
 ##############
 page {
+
+    page.shortcutIcon = EXT:site_package/Resources/Public/Icons/favicon.ico
+
     includeCSS {
       theme = EXT:site_package/Resources/Public/Scss/theme.scss  
     }
