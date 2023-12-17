@@ -203,5 +203,35 @@
         }
       }
     }
+
+    @media (max-width: 768px) {
+      padding-left: 12px;
+
+      &:before {
+        transform: translate(-1.675rem, 0);
+      }
+
+      &:after {
+        filter: blur(5px);
+        transform: translate(-1rem, 0);
+      }
+
+      .timeline-item-inner {
+        margin-left: 0.5rem;
+      }
+
+      .timeline-item:nth-child(odd) .timeline-content-wrap:before,
+      .timeline-item:nth-child(odd) .timeline-content-wrap:after,
+      .timeline-item:nth-child(even) .timeline-content-wrap:before,
+      .timeline-item:nth-child(even) .timeline-content-wrap:after {
+        margin-left: 0.5rem;
+        width: calc(100% + 2px - 0.5rem);
+      }
+
+      .timeline-item-marker,
+      .timeline-item-icon {
+        left: -1rem;
+      }
+    }
   }
 }
