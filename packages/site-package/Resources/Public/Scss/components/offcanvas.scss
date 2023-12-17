@@ -1,0 +1,54 @@
+.offcanvas {
+  --bs-offcanvas-width: 100vw;
+  --bs-offcanvas-padding-x: 2rem;
+
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .navbar-nav {
+      --bs-nav-link-padding-y: 1rem;
+    }
+
+    .nav-link,
+    .nav-link-social,
+    .nav-link-home {
+      text-align: right;
+
+      span.nav-link-text {
+        font-size: 1.5rem;
+      }
+    }
+
+    .nav-link-home {
+      svg {
+        height: 24px;
+        width: 24px;
+      }
+    }
+
+    .navbar-nav {
+      li.nav-item.nav-item-social {
+        display: none;
+      }
+    }
+
+    ul.social-links-list {
+      padding-left: 0;
+      width: 100%;
+      list-style-type: none;
+      display: inline-flex;
+      justify-content: center;
+      li {
+        padding: 1rem 3rem;
+        a {
+          svg {
+            height: 24px;
+            width: 24px;
+          }
+        }
+      }
+    }
+  }
+}
