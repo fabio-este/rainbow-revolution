@@ -21,7 +21,7 @@ offcanvasToggle.onclick = function () {
 window.addEventListener("DOMContentLoaded", function () {
   var n = document.querySelectorAll(".navbar-fixed-top");
   function t() {
-    paddingTop / 2 < window.scrollY
+    10 < window.scrollY
       ? n[0].classList.add("navbar-transition")
       : n[0].classList.remove("navbar-transition");
   }
